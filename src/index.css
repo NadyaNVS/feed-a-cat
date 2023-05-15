@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: url('./fonts/TrebuchetMS.woff2') format('woff2'),
+      url('./fonts/TrebuchetMS.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('./fonts/Exo2-Thin.woff2') format('woff2'),
+      url('./fonts/Exo2-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+html {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Exo 2','Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 100;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+}
