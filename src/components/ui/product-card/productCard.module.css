@@ -19,20 +19,45 @@
     background-position-x: -2px;
     background-repeat: no-repeat;
     padding: 21px 16px 16px 44px;
-
 }
 
-.productCard::before{
-        position: absolute;
-        content: "";
-        display: block;
-        top: -15px;
-        left: 17px;
-        width: 6px;
-        height: 75px;
-        background: #2EA8E6;
-        transform: rotate(48deg);
-    }
+.productCard::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -15px;
+    left: 17px;
+    width: 6px;
+    height: 75px;
+    background: #2EA8E6;
+    transform: rotate(48deg);
+}
+
+.productCard:hover {
+    border-color: pink;
+}
+
+.productCard:hover.productCard::before {
+    background: pink;
+}
+
+.selected {
+    border-color: greenyellow;
+}
+
+.selected:hover {
+    border-color: greenyellow;
+    opacity: 0.9;
+}
+
+.selected.productCard::before {
+    background: greenyellow;
+}
+
+.selected:hover.productCard::before {
+    background: greenyellow;
+}
+
 
 .productCard p {
     margin: 0;
@@ -75,6 +100,18 @@
     line-height: 22px;
 }
 
+.productCard:hover .weight {
+    background-color: pink;
+}
+
+.selected .weight {
+    background-color: greenyellow;
+}
+
+.selected:hover .weight {
+    background-color: greenyellow;
+    opacity: 0.7;
+}
 
 
 .weight span {

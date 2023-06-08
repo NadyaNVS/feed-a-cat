@@ -9,17 +9,22 @@ function ProductCard({
   gift,
   feature,
   kilos,
+  className,
+  onClick,
 }) {
   return (
-    <div className={style.productCard}>
+    <div
+      onClick={onClick}
+      className={`${style.productCard} + ${className ? style.selected : ''}`}
+    >
       <p>{description}</p>
       <h2>{brand}</h2>
       <h3>{taste}</h3>
       <span>
-        <b>{portion}</b> portion
+        <b>{portion}</b> {portion > 1 ? 'portions' : 'portions'}
       </span>
       <span>
-        <b>{gift}</b> as a gift
+        <b>{gift}</b> {gift > 1 ? 'mouse' : 'mice'} as a gift
       </span>
       <span>{feature}</span>
       <div className={style.weight}>
