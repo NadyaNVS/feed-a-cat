@@ -59,6 +59,23 @@
 }
 
 
+.disabled {
+    opacity: 0.7;
+    border-color: grey;
+}
+
+.disabled:hover {
+    border-color: grey;
+}
+
+.disabled.productCard::before {
+    background:  grey;
+}
+
+.disabled:hover.productCard::before {
+    background: grey;
+}
+
 .productCard p {
     margin: 0;
 }
@@ -113,6 +130,13 @@
     opacity: 0.7;
 }
 
+.disabled .weight {
+    background-color: grey;
+}
+
+.disabled:hover .weight {
+    background-color: grey;
+}
 
 .weight span {
     font-size: 21px;

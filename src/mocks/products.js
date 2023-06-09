@@ -10,7 +10,7 @@ const products = [
         kilos: "0,5",
         addition: `Why are you sitting? Make the cat happy, <a href="0">buy</a>`,
         select: "Duck liver boiled with artichokes.",
-        disabled: "Sadly, the foie gras is over."
+        over: "Sadly, the foie gras is over."
     },
     {
         id: 1,
@@ -24,7 +24,7 @@ const products = [
         addition: `Why are you sitting? Make the cat happy 
         <a href="0">buy</a>`,
         select: "Pike heads with garlic and the freshest salmon.",
-        disabled: "Sadly, with fish is over."
+        over: "Sadly, with fish is over."
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ const products = [
         kilos: "5",
         addition: `Why are you sitting? Make the cat happy, <a href="0">buy</a>`,
         select: "Chicken fillet with truffles in broth.",
-        disabled: "Sadly, with chicken is over."
+        over: "Sadly, with chicken is over."
     }
 ];
 

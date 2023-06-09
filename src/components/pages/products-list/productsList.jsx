@@ -31,7 +31,7 @@ function ProductsList(props) {
           <ul className={style.productList}>
             {props.products.map((product, index) => (
               <li key={index} className={style.productItem}>
-                <ProductCard {...product} />
+                <ProductCard {...product} disabled={false} />
               </li>
             ))}
           </ul>
