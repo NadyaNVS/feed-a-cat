@@ -3,26 +3,6 @@ import style from './productsList.module.css';
 import ProductCard from '../../ui/product-card/productCard';
 
 function ProductsList(props) {
-  // const [selectedFilter, setSelectedFilter] = useState([0]);
-
-  // const productOnClick = (product) => {
-  //   selectedFilter.includes(product)
-  //     ? removeProduct(product)
-  //     : setProduct(product);
-  // };
-
-  // const setProduct = (product) => {
-  //   setSelectedFilter([...selectedFilter, product]);
-  // };
-
-  // const removeProduct = (product) => {
-  //   const index = selectedFilter.findIndex((prod) => prod === product);
-  //   selectedFilter.splice(index, 1);
-  //   setSelectedFilter([...selectedFilter]);
-  // };
-
-  // const sentences =
-
   return (
     <div className={style.container}>
       {props.products?.length ? (

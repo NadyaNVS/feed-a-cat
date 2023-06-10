@@ -1,10 +1,11 @@
 import React from 'react';
+import style from './sentence.module.css';
 
 function Sentence(props) {
   return (
-    <div>
-      <p>{props.text}</p>
-    </div>
+    <>
+      <p className={style.text}>{props.text}</p>
+    </>
   );
 }
 

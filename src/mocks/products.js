@@ -2,6 +2,7 @@ const products = [
     {
         id: 0,
         description: "Fabulous overseas dish",
+        question: "Does the cat disapprove?",
         brand: "Nyamushka",
         taste: "with foie gras",
         portion: "10",
@@ -15,6 +16,7 @@ const products = [
     {
         id: 1,
         description: "Fabulous overseas dish",
+        question: "Does the cat disapprove?",
         brand: "Nyamushka",
         taste: "with fish",
         portion: "40",
@@ -29,6 +31,7 @@ const products = [
     {
         id: 2,
         description: "Fabulous overseas dish",
+        question: "Does the cat disapprove?",
         brand: "Nyamushka",
         taste: "with chicken",
         portion: "100",
