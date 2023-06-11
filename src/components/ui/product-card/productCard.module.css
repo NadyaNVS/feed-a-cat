@@ -26,11 +26,11 @@
     content: "";
     display: block;
     top: -15px;
-    left: 17px;
+    left: 15px;
     width: 6px;
     height: 75px;
     background: #2EA8E6;
-    transform: rotate(48deg);
+    transform: rotate(44deg);
 }
 
 .productCard:hover {

@@ -1,7 +1,7 @@
 .container {
-    max-width: 1366px;
+    max-width: 1240px;
     margin: 0 auto;
-    padding: 0 80px;
+    padding: 0 40px;
 }
 
 .title {
@@ -18,7 +18,7 @@
     margin: 0;
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, max(320px));
     grid-auto-rows: auto;
     gap: 80px;
 }
