@@ -2,78 +2,72 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    flex-grow: 1;
+    justify-content: space-between;
     background-color: white;
     min-height: 480px;
-
+    box-sizing: border-box;
+    cursor: pointer;
     border-radius: 12px;
-    border: 4px solid #2EA8E6;
     font-family: 'Trebuchet MS','Arial', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #666666;
-    clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0% 9%);
-    background-image: url("../../../assets/cat.png");
-    background-position-y: bottom;
-    background-position-x: -2px;
+    clip-path: polygon(13.5% 0, 100% 0, 100% 100%, 0 100%, 0% 9%);
     background-repeat: no-repeat;
-    padding: 21px 16px 16px 44px;
 }
 
-.productCard::before {
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 19px 16px 16px 46px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 0 0 12px 12px;
+}
+
+svg {
+    top: 0;
+    left: 0;
     position: absolute;
-    content: "";
-    display: block;
-    top: -15px;
-    left: 15px;
-    width: 6px;
-    height: 75px;
-    background: #2EA8E6;
-    transform: rotate(44deg);
+    fill: #1698D9;
 }
 
-.productCard:hover {
-    border-color: pink;
+.productCard:hover svg {
+    fill: pink;
 }
 
-.productCard:hover.productCard::before {
-    background: pink;
+.discription {
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.selected {
-    border-color: greenyellow;
+.selected svg {
+    fill: greenyellow;
 }
-
 .selected:hover {
-    border-color: greenyellow;
     opacity: 0.9;
 }
 
-.selected.productCard::before {
-    background: greenyellow;
+.selected:hover svg {
+    fill: greenyellow;
 }
-
-.selected:hover.productCard::before {
-    background: greenyellow;
-}
-
 
 .disabled {
+    cursor:default;
     opacity: 0.7;
-    border-color: grey;
 }
 
-.disabled:hover {
-    border-color: grey;
+.disabled svg {
+    fill: grey;
 }
 
-.disabled.productCard::before {
-    background:  grey;
-}
-
-.disabled:hover.productCard::before {
-    background: grey;
+.disabled:hover svg{
+    fill: grey;
 }
 
 .productCard p {
@@ -100,8 +94,8 @@
 
 .weight {
     position: absolute;
-    right: 16px;
-    bottom: 16px;
+    right: 12px;
+    bottom: 9px;
     height: 80px;
     width: 80px;
     background-color: #1698D9;

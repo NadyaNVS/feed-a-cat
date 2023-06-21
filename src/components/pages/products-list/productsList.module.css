@@ -1,7 +1,19 @@
 .container {
-    max-width: 1240px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 80px;
+}
+
+@media (max-width: 1199px) {
+    .container {
+        padding: 0 45px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 15px;
+    }
 }
 
 .title {
@@ -23,7 +35,23 @@
     gap: 80px;
 }
 
+@media (max-width: 1199px) {
+    .productList {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        flex-wrap: wrap;
+    }
+}
+
 .productItem {
+    width: 320px;
     display: flex;
     flex-direction: column;
 }
+
+/* @media (max-width: 767px) {
+    .productList {
+        grid-template-columns: repeat(1, max(320px));
+    }
+} */

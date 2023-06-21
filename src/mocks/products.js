@@ -1,46 +1,56 @@
+import cardPicture from "../assets/cat.png"
+
 const products = [
     {
         id: 0,
         description: "Fabulous overseas dish",
-        question: "Does the cat disapprove?",
+        question: "Has the cat changed its mind?",
         brand: "Nyamushka",
         taste: "with foie gras",
         portion: "10",
         gift: "",
-        feature: " ",
+        feature: "",
+        picture: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Savannah_Cat_closeup.jpg/800px-Savannah_Cat_closeup.jpg",
+        alt: 'cat food "Nyamushka" with foie gras',
         kilos: "0,5",
-        addition: `Why are you sitting? Make the cat happy, <a href="0">buy</a>`,
+        defaultText: "Why are you sitting? Make the cat happy",
         select: "Duck liver boiled with artichokes.",
-        over: "Sadly, the foie gras is over."
+        over: "Sadly, the foie gras is over.",
+        available: true,
     },
     {
         id: 1,
         description: "Fabulous overseas dish",
-        question: "Does the cat disapprove?",
+        question: "Has the cat changed its mind?",
         brand: "Nyamushka",
         taste: "with fish",
         portion: "40",
         gift: "2",
-        feature: " ",
+        feature: "",
+        picture: cardPicture,
+        alt: 'cat food "Nyamushka" with fish',
         kilos: "2",
-        addition: `Why are you sitting? Make the cat happy 
-        <a href="0">buy</a>`,
+        defaultText: "Why are you sitting? Make the cat happy",
         select: "Pike heads with garlic and the freshest salmon.",
-        over: "Sadly, with fish is over."
+        over: "Sadly, with fish is over.",
+        available: true,
     },
     {
         id: 2,
         description: "Fabulous overseas dish",
-        question: "Does the cat disapprove?",
+        question: "Has the cat changed its mind?",
         brand: "Nyamushka",
         taste: "with chicken",
         portion: "100",
         gift: "5",
         feature: "the customer is satisfied",
+        picture: cardPicture,
+        alt: 'cat food "Nyamushka" with chicken',
         kilos: "5",
-        addition: `Why are you sitting? Make the cat happy, <a href="0">buy</a>`,
+        defaultText: "Why are you sitting? Make the cat happy",
         select: "Chicken fillet with truffles in broth.",
-        over: "Sadly, with chicken is over."
+        over: "Sadly, with chicken is over.",
+        available: false,
     }
 ];
 

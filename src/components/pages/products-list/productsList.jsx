@@ -7,11 +7,11 @@ function ProductsList(props) {
     <div className={style.container}>
       {props.products?.length ? (
         <>
-          <h1 className={style.title}>Did you feed the cat today?</h1>
+          <h1 className={style.title}>Have you fed your cat today?</h1>
           <ul className={style.productList}>
             {props.products.map((product, index) => (
               <li key={index} className={style.productItem}>
-                <ProductCard {...product} disabled={false} />
+                <ProductCard {...product} />
               </li>
             ))}
           </ul>
