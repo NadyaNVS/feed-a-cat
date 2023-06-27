@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "feed-a-cat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://NadyaNVS.github.io/feed-a-cat",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -16,6 +17,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
