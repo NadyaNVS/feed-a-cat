@@ -16,6 +16,7 @@ function ProductCard({
   kilos,
   select,
   defaultText,
+  defaultAction,
   available,
   over,
 }) {
@@ -94,11 +95,9 @@ function ProductCard({
         {active ? (
           <Sentence text={select} />
         ) : !available ? (
-          <Sentence text={over} />
+          <Sentence text={over} available={!available} />
         ) : (
-          <p>
-            {defaultText} <a href="0">buy</a>
-          </p>
+          <Sentence text={defaultText} action={defaultAction} />
         )}
       </div>
     </div>

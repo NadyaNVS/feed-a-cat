@@ -38,7 +38,7 @@ svg {
 }
 
 .productCard:hover svg {
-    fill: pink;
+    fill: rgb(87, 190, 242);
 }
 
 .discription {
@@ -47,14 +47,15 @@ svg {
 }
 
 .selected svg {
-    fill: greenyellow;
+    fill: rgb(58, 187, 84);
+    transition: fill .7s ease;
 }
 .selected:hover {
     opacity: 0.9;
 }
 
 .selected:hover svg {
-    fill: greenyellow;
+    fill: rgb(58, 187, 84);
 }
 
 .disabled {
@@ -112,15 +113,16 @@ svg {
 }
 
 .productCard:hover .weight {
-    background-color: pink;
+    background-color: rgb(87, 190, 242);
 }
 
 .selected .weight {
-    background-color: greenyellow;
+    background-color: rgb(58, 187, 84);
+    transition: fill .7s ease;
 }
 
 .selected:hover .weight {
-    background-color: greenyellow;
+    background-color: rgb(58, 187, 84);
     opacity: 0.7;
 }
 
@@ -140,4 +142,8 @@ svg {
 
 .question {
     color: orange;
+}
+
+.text {
+    margin: 0;
 }
