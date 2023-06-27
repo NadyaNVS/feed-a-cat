@@ -6,6 +6,7 @@
 }
 
 .action {
+    cursor: pointer;
     text-decoration: underline dashed;
     color: #1698D9;
     padding-left: 5px;

@@ -9,16 +9,16 @@ function ProductCard({
   brand, // name of product
   taste, // taste of food
   portion, //portion quantity
-  gift,
+  gift, //additional gift with purchase
   feature,
   picture,
   alt,
   kilos,
-  select,
+  select, //text when the item is selected
+  stock, //text when the item is out of stock
   defaultText,
   defaultAction,
   available,
-  over,
 }) {
   const [active, setActive] = useState(false);
   const [isHoverCard, setIsHoverCard] = useState(false);
@@ -40,7 +40,18 @@ function ProductCard({
   };
 
   const border = (
-    <svg width="320" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className={`${style.border} ${active ? `${style.borderSelected}` : ''} ${
+        !active && isHoverCard && isHoverEnable ? `${style.borderHover}` : ''
+      } ${
+        active && isHoverCard && isHoverEnable
+          ? `${style.borderHoverSelected}`
+          : ''
+      }`}
+      width="320"
+      height="100%"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <mask id="a" fill="#fff">
         <path d="M0 42.676V468c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12H42.676L0 42.676Z" />
       </mask>
@@ -76,7 +87,7 @@ function ProductCard({
           <span className={style.discription}>
             <b>{gift}</b> {gift > 1 ? 'mice' : 'mouse'} as a gift
           </span>
-          {feature > 1 ? <span>{feature}</span> : null}
+          {feature && <span className={style.discription}>{feature}</span>}
         </div>
         <img
           src={picture}
@@ -95,9 +106,13 @@ function ProductCard({
         {active ? (
           <Sentence text={select} />
         ) : !available ? (
-          <Sentence text={over} available={!available} />
+          <Sentence text={stock} available={!available} />
         ) : (
-          <Sentence text={defaultText} action={defaultAction} />
+          <Sentence
+            text={defaultText}
+            action={defaultAction}
+            onClick={hendelToggle}
+          />
         )}
       </div>
     </div>

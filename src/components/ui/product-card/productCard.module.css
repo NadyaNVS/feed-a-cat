@@ -30,32 +30,29 @@
     border-radius: 0 0 12px 12px;
 }
 
-svg {
+.border {
     top: 0;
     left: 0;
     position: absolute;
     fill: #1698D9;
 }
 
-.productCard:hover svg {
+.borderHover {
     fill: rgb(87, 190, 242);
 }
+
+.borderSelected {
+    fill: rgb(58, 187, 84);
+}
+
+.borderHoverSelected {
+    opacity: 0.5;
+}
+
 
 .discription {
     font-size: 14px;
     line-height: 16px;
-}
-
-.selected svg {
-    fill: rgb(58, 187, 84);
-    transition: fill .7s ease;
-}
-.selected:hover {
-    opacity: 0.9;
-}
-
-.selected:hover svg {
-    fill: rgb(58, 187, 84);
 }
 
 .disabled {
@@ -63,11 +60,7 @@ svg {
     opacity: 0.7;
 }
 
-.disabled svg {
-    fill: grey;
-}
-
-.disabled:hover svg{
+.disabled .border {
     fill: grey;
 }
 
@@ -112,7 +105,8 @@ svg {
     line-height: 22px;
 }
 
-.productCard:hover .weight {
+
+.borderHover~.weight {
     background-color: rgb(87, 190, 242);
 }
 
@@ -121,10 +115,12 @@ svg {
     transition: fill .7s ease;
 }
 
-.selected:hover .weight {
+.borderHoverSelected~.weight {
     background-color: rgb(58, 187, 84);
     opacity: 0.7;
 }
+
+
 
 .disabled .weight {
     background-color: grey;

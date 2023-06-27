@@ -16,7 +16,7 @@ const products = [
         defaultText: "Why are you sitting? Make the cat happy,",
         defaultAction: "buy",
         select: "Duck liver boiled with artichokes.",
-        over: "Sadly, the foie gras is over.",
+        stock: "Sorry, the foie gras is out of stock.",
         available: true,
     },
     {
@@ -34,7 +34,7 @@ const products = [
         defaultText: "Why are you sitting? Make the cat happy,",
         defaultAction: "buy",
         select: "Pike heads with garlic and the freshest salmon.",
-        over: "Sadly, with fish is over.",
+        stock: "Sorry, with fish is out of stock.",
         available: true,
     },
     {
@@ -45,14 +45,14 @@ const products = [
         taste: "with chicken",
         portion: "100",
         gift: "5",
-        feature: "the customer is satisfied",
+        feature: "the customer is happy",
         picture: cardPicture,
         alt: 'cat food "Nyamushka" with chicken',
         kilos: "5",
         defaultText: "Why are you sitting? Make the cat happy,",
         defaultAction: "buy",
         select: "Chicken fillet with truffles in broth.",
-        over: "Sadly, with chicken is over.",
+        stock: "Sorry, with chicken is out of stock.",
         available: false,
     }
 ];

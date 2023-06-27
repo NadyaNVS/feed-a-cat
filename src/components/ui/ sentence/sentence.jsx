@@ -11,9 +11,9 @@ function Sentence(props) {
       >
         {props.text}
         {props.action && (
-          <a className={style.action} href="0">
+          <span className={style.action} href="0" onClick={props.onClick}>
             {props.action}
-          </a>
+          </span>
         )}
       </p>
     </>
